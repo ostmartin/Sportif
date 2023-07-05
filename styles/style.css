@@ -131,12 +131,12 @@ header{
     font-size: 1.5rem;
     /* width: 300px; */
     width: 30rem;
+    height: 5rem;
     text-align: center;
     /* border-radius: 54px; */
     border-radius: 5.4rem;
     border: 1px solid;
     border-color: var(--main-orange);
-    height: 3rem;
     text-transform: uppercase;
     /* padding-left: 50px; */
     padding-left: 5rem;
@@ -258,8 +258,10 @@ header{
 }
 
 .card button{
-    width: 38%;
+    width: fit-content;
     height: 10%;
+    line-height: 100%;
+    text-align: center;
     align-items: center;
 }
 
@@ -915,3 +917,25 @@ hr{
     padding: 2rem 0;
 }
 
+.cart{
+    position: relative;
+}
+
+.cartSize{
+    scale: 1.5;
+    color: black;
+}
+
+
+.cart-num{
+    height: 2rem;
+    width: 2rem;
+    background-color: var(--main-orange);
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(290%, -40%);
+    color: var(--white);
+    line-height: normal;
+    text-align: center;
+    padding-top: 10%;
+}
